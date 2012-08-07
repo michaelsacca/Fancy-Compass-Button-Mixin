@@ -1,7 +1,4 @@
-Fancy-Compass-Button-Mixin
-==========================
-
-##Compass Button Mixin
+##Compass Button Mixin with CSS3 Transitions
 
 This mixin will create an animated hover and active state for your button ([View Example Here](##)).  Feel free to replace the variables or add them to a variable sheet inside of your project.  Add this mixin to your Compass project: 
 
