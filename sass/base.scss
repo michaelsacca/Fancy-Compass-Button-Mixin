@@ -1,0 +1,42 @@
+/* =======================
+Compass
+========================*/
+@import 'compass/css3';
+@import 'compass/reset';
+
+/* =======================
+Variables
+========================*/
+$baseColor:    #E0E0E0;
+$textColor:    darken($baseColor, 50%);
+$fontSize:     .8em;
+
+/* =======================
+Mixin
+========================*/
+@import 'btnMixin';
+
+
+/* =======================
+Demo Styles
+========================*/
+body {
+	font-size:100%;
+	font-family: 'Open Sans', sans-serif;
+	background-color:#ababab;
+	@include background-image(radial-gradient(#fff, #ccc));
+}
+
+.btnHldr {
+	position:absolute;
+	height:30px;
+	width:100px;
+	left:50%;
+	margin-left:-100px;
+	top:50%;
+	margin-top:-15px;
+}
+
+.btn {
+	@include btn();
+}

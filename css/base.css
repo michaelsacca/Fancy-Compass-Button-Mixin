@@ -1,0 +1,151 @@
+/* =======================
+Compass
+========================*/
+/* line 17, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* =======================
+Variables
+========================*/
+/* =======================
+Mixin
+========================*/
+/* =======================
+Demo Styles
+========================*/
+/* line 23, ../sass/base.scss */
+body {
+  font-size: 100%;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ababab;
+  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #ffffff), color-stop(100%, #cccccc));
+  background-image: -webkit-radial-gradient(#ffffff, #cccccc);
+  background-image: -moz-radial-gradient(#ffffff, #cccccc);
+  background-image: -o-radial-gradient(#ffffff, #cccccc);
+  background-image: -ms-radial-gradient(#ffffff, #cccccc);
+  background-image: radial-gradient(#ffffff, #cccccc);
+}
+
+/* line 30, ../sass/base.scss */
+.btnHldr {
+  position: absolute;
+  height: 30px;
+  width: 100px;
+  left: 50%;
+  margin-left: -100px;
+  top: 50%;
+  margin-top: -15px;
+}
+
+/* line 40, ../sass/base.scss */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.8em 1.06667em;
+  font-size: 0.8em;
+  border: 1px solid #adadad;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 0 white;
+  -moz-box-shadow: 0 1px 0 white;
+  box-shadow: 0 1px 0 white;
+  text-shadow: 0 1px 0 white;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  color: #616161;
+}
+/* line 12, ../sass/_btnMixin.scss */
+.btn:hover {
+  border-color: #949494;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #c7c7c7));
+  background: -webkit-linear-gradient(top, #ffffff, #c7c7c7);
+  background: -moz-linear-gradient(top, #ffffff, #c7c7c7);
+  background: -o-linear-gradient(top, #ffffff, #c7c7c7);
+  background: -ms-linear-gradient(top, #ffffff, #c7c7c7);
+  background: linear-gradient(top, #ffffff, #c7c7c7);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), inset 0 0 2px white;
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), inset 0 0 2px white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), inset 0 0 2px white;
+  text-decoration: none;
+}
+/* line 18, ../sass/_btnMixin.scss */
+.btn:active {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d3d3d3), color-stop(100%, #e0e0e0));
+  background: -webkit-linear-gradient(top, #d3d3d3, #e0e0e0);
+  background: -moz-linear-gradient(top, #d3d3d3, #e0e0e0);
+  background: -o-linear-gradient(top, #d3d3d3, #e0e0e0);
+  background: -ms-linear-gradient(top, #d3d3d3, #e0e0e0);
+  background: linear-gradient(top, #d3d3d3, #e0e0e0);
+  -webkit-box-shadow: 0 1px 0 white, inset 0 1px 2px #a0a0a0;
+  -moz-box-shadow: 0 1px 0 white, inset 0 1px 2px #a0a0a0;
+  box-shadow: 0 1px 0 white, inset 0 1px 2px #a0a0a0;
+  border-color: #949494;
+}
